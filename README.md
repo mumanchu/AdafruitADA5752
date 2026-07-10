@@ -69,7 +69,7 @@ https://learn.adafruit.com/adafruit-i2c-quad-rotary-encoder-breakout
 **Adafruit Seesaw Reference** \
 https://learn.adafruit.com/adafruit-seesaw-atsamd09-breakout/reading-and-writing-data
 
-**ADA5752 Schematic**
+**ADA5752 Schematic** \
 https://learn.adafruit.com/assets/122222
 
 <br/>
