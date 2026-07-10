@@ -7,7 +7,14 @@
 
 #include <Wire.h>
 
-#if 1
+//Uncomment this for Arduino Zero if you use Pin 1 TX
+//#define Serial Serial1
+
+//Uncoment this for Arduino Uno
+//typedef unsigned long ulong;
+//typedef unsigned int uint;
+
+#if 1	// when debugging
 #define LOGERROR(s) { Serial.println(s); Serial.flush(); }
 #else
 #define LOGERROR(s)
