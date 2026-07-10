@@ -19,7 +19,7 @@ This code was developed and tested on an STM32. It may need modifications for ot
 
 The board is very nice, BUT for some reason they mounted the RGB LEDs **underneath** the rotary encoders, so they cannot be seen! See the pictures of the board above, the LEDs are covered when the encoders are fitted. This would only work if the encoders had transparent shafts and transparent buttons. I have not been able to find any encoders with transparent shafts. So I removed the onboard RGB LEDs and made a piggyback board for them, so they are mounted below the encoders. 
 
-<img src="https://github.com/mumanchu/mumanchu/blob/main/assets/ada5752/ada5752piggyback.jpg" alt="Picture of ADA5752 piggyback board" width="600">
+<img src="https://github.com/mumanchu/mumanchu/blob/main/assets/ada5752/ada5752piggyback2.jpg" alt="Picture of ADA5752 piggyback board" width="600">
 
 The piggyback board needs VCC and GND, plus the DIN data signal from the ADA5752 board. With the LEDs removed, the DIN signal can be taked from the DIN pin of LED 0. You can see this on the schematic in Useful Links.
 
@@ -30,7 +30,7 @@ The piggyback board needs VCC and GND, plus the DIN data signal from the ADA5752
   
 ## setEncoderPosition() FW Bug!
 
-The Seesaw firmware on my quad encoder board has a firmware bug. The I2C message to set the encoder position does not work. This bug was fixed on 2024.02.27, but my board's FW version is from 2017.06.27. The firmware release date can be read from the module, see the code in `AdafruitADA5752.begin()`. The `mumanchu` library contains a workaround which corrects this bug, see `setEncoderPosition()` and `getEncoderPosition()`.
+The Seesaw firmware on my quad encoder board has a firmware bug. The I2C message to set the encoder position does not work. This bug was fixed on 2024.02.27, but my board's FW version is from 2017.06.27. The firmware release date can be read from the module, see the code in `AdafruitADA5752.begin()`. This library contains a workaround which corrects this bug, see `setEncoderPosition()` and `getEncoderPosition()`.
 
 https://github.com/adafruit/Adafruit_seesawPeripheral/issues/25
 
