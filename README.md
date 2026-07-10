@@ -1,4 +1,4 @@
-# Adafruit ADA5752 I2C Quad Rotary Encoder + 4 x Neopixel LEDs
+# Adafruit ADA5752 I2C Quad Rotary Encoder with 4 Neopixel LEDs
 
 The ADA5752 is an I2C module with four rotary encoders and four RGB LEDs. It has an onboard microcontroller (ATtiny8X7) to do most of the work. This removes all the complexity of interrupt handling for the encoder signals and the nanosecond timing for the RGB LEDs communications. It does not have the rotary encoders fitted, so you need to buy those separately and solder them on. The mounting holes were too small for the encoders that I bought, so I had to enlarge the holes by drilling them out.
 
