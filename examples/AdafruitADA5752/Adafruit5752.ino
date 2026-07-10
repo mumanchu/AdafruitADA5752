@@ -26,7 +26,7 @@ AdafruitADA5752 ada5752;
 
 void setup()
 {
-	// use different pins for RX/TX
+	//STM32 Nucleo, use different pins for RX/TX
 	//Serial.setTx(PC_10);
 	//Serial.setRx(PC_11);
 
