@@ -10,7 +10,7 @@
 //Uncomment this for Arduino Zero if you use Pin 1 TX
 //#define Serial Serial1
 
-//Uncoment this for Arduino Uno
+//Uncomment this for Arduino Uno
 //typedef unsigned long ulong;
 //typedef unsigned int uint;
 
