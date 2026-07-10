@@ -2,9 +2,11 @@
 
 The ADA5752 is an I2C module with four rotary encoders and four RGB LEDs. It has an onboard microcontroller (ATtiny8X7) to do most of the work. This removes all the complexity of interrupt handling for the encoder signals and the nanosecond timing for the RGB LEDs communications. It does not have the rotary encoders fitted, so you need to buy those separately and solder them on. The mounting holes were too small for the encoders that I bought, so I had to enlarge the holes by drilling them out.
 
-<img src="https://github.com/mumanchu/mumanchu/blob/main/assets/ada5752/ada5752.jpg" alt="Picture of ADA5752 board" width="600">
+<img src="https://github.com/mumanchu/mumanchu/blob/main/assets/ada5752/ada5752a.jpg" alt="Picture of ADA5752 board" width="300">
 
 This board is part of Adafruit's "Seesaw" framework which comprises a set of intelligent boards with I2C interfaces and a comprehensive Adafruit Seesaw library for programming them. It has Stemma QT connectors (for chaining I2C devices), but you don't need to use those because it also has a 2.54mm pin header. All the Seesaw boards will run on 3.3V or 5V, which is nice.
+
+<img src="https://github.com/mumanchu/mumanchu/blob/main/assets/ada5752/ada5752.jpg" alt="Picture of ADA5752 PCB" width="600">
 
 > [!WARNING]
 > The 4 x RGB LEDs will need up to 240mA at full brightness. Make sure your microcontroller board can deliver this. If not, use a separate power supply for the ADA5752.
