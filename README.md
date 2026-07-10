@@ -27,6 +27,8 @@ The piggyback board needs VCC and GND, plus the DIN data signal from the ADA5752
 
 <img src="https://github.com/mumanchu/mumanchu/blob/main/assets/ada5752/ada5752dinpin.jpg" alt="Picture of ADA5752 DIN pin" width="600">
 
+In the picture above, the obscured RGB LEDs have been removed and replacement LEDs fitted on a piggyback board.
+
 > [!WARNING]
 > It is almost impossible to unsolder the existing RGB LEDs without damaging them. So you will need four new WS2813B LEDs. An LED strip can also be used, maybe with more than 4 LEDs if you modify the Neopixel buffer length in `AdafruitADA5752::beginNeopixel()` (but I have not tried this). If using more than 4 LEDs you'll probably need a separate power supply.
   
