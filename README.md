@@ -15,7 +15,9 @@ I wanted to use this board _without_ the Seesaw library, so this small-footprint
 
 Poll the encoder with `hasInterrupt()` from `loop()` to check for events, then read the positions and button states. It does not use and actual GPIO interrupt because you cannot call the I2C methods from an interrupt handler. The interrupt state is not cleared until the position and button states are read. The red LED on the board turns on when the INT pin is active (low). See the example sketch.
 
-This code was developed and tested on an STM32. It may need modifications for other MCUs, further tests will be done later.
+## Supported Microcontrollers
+
+The code was developed on an STM32 Nucleo F103. It has been tested on an Arduino Zero and an Arduino Uno, see the commented out code in the example sketch. It should work on all platforms.
 
 ## The RGB LEDs are located UNDERNEATH the Rotary Encoders!
 
