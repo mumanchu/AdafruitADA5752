@@ -17,7 +17,7 @@ Poll the encoder with `hasInterrupt()` from `loop()` to check for events, then r
 
 ## Supported Microcontrollers
 
-The code was developed on an STM32 Nucleo F103. It has been tested on an Arduino Zero and an Arduino Uno, see the commented out code in the example sketch. It should work on all platforms.
+The code was developed on an STM32F103 Nucleo. It has been tested on an Arduino Zero and an Arduino Uno, see the commented out code in the example sketch. It should work on all platforms.
 
 ## The RGB LEDs are located UNDERNEATH the Rotary Encoders!
 
@@ -83,6 +83,7 @@ https://learn.adafruit.com/assets/122222
 | Date       | Version  | Details |
 |:---------- |:---------|:----------- |
 | 2026.07.10 | 0.0.0	| Preliminary |
+| 2026.07.11 | 1.0.0    | Tested on Arduino Uno and Zero
 
 <br/>
 
