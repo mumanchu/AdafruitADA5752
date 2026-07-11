@@ -410,7 +410,7 @@ bool AdafruitADA5752::write(byte adds, byte reg, byte* buf, byte len)
 
 // Reverse the 4 bytes of a 32-bit value
 // (little to big-endian conversion, or is it big to little-startian?)
-// (or Motorola to Intel format, if you're under 65)
+// (or Motorola to Intel format, if you're over 65)
 ulong AdafruitADA5752::swap32(const byte* buf)
 {
 	byte buf2[4];
