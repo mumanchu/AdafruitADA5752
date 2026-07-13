@@ -8,12 +8,12 @@ This board is part of Adafruit's "Seesaw" framework which comprises a set of int
 
 <img src="https://github.com/mumanchu/mumanchu/blob/main/assets/ada5752/ada5752.jpg" alt="Picture of ADA5752 PCB" width="600">
 
-> [!WARNING]
-> The 4 x RGB LEDs will need up to 240mA at full brightness. Make sure your microcontroller board can deliver this. If not, use a separate power supply for the ADA5752.
-
 I wanted to use this board _without_ the Seesaw library, so this small-footprint AdafruitADA5752 library `Adafruit5752.h` was developed. It handles the rotary encoders and RGB LEDs in the same `AdafruitADA5752` class.
 
 Poll the encoder with `hasInterrupt()` from `loop()` to check for events, then read the positions and button states. It does not use and actual GPIO interrupt because you cannot call the I2C methods from an interrupt handler. The interrupt state is not cleared until the position and button states are read. The red LED on the board turns on when the INT pin is active (low). See the example sketch.
+
+> [!WARNING]
+> The 4 x RGB LEDs will need up to 240mA at full brightness. Make sure your microcontroller board can deliver this. If not, use a separate power supply for the ADA5752.
 
 ## Supported Microcontrollers
 
